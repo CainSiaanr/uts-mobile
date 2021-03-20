@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6698f5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <ImageButton
+                android:id="@+id/goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                android:onClick="backtomain"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halaman Profil"
+                android:textSize="12pt"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/areautama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/bg_circle"
+            android:outlineProvider="background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/karameru2"
+            android:contentDescription="LOGO APLIKASI" />
+
+        <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:layout_marginBottom="20dp"
+        android:text="NIM\t\t\t\t:\t00000026772\nNAMA\t\t:\tIvan Tenusa\nKELAS\t\t:\tIF633-EL"
+        app:layout_constraintTop_toBottomOf="@id/logo2"
+        app:layout_constraintBottom_toTopOf="@id/referensi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/referensi"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:text="REFERENSI\n"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/isireferensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Website :\n
+https://medium.com/swlh/android-circleimageview-simplified-dac935364393\n
+https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.ViewHolder\n
+https://developer.android.com/guide/topics/media/mediaplayer\n
+https://developer.android.com/guide/topics/ui/dialogs\n
+https://stackoverflow.com/questions/12249495/android-imagebutton-change-image-onclick\n
+https://stackoverflow.com/questions/17168215/seekbar-and-media-player-in-android\n
+https://stackoverflow.com/questions/43675571/android-seekbar-and-mediaplayer/43676473\n
+https://stackoverflow.com/questions/38060002/how-to-show-hide-textview-in-android-xml-file-and-java-file\n
+https://stackoverflow.com/questions/3141996/android-how-to-override-the-back-button-so-it-doesnt-finish-my-activity\n
+Video : \n
+https://www.youtube.com/watch?v=yzuSo4Bkh-k"
+        app:layout_constraintTop_toBottomOf="@id/areautama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
